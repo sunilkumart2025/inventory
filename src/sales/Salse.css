@@ -1,0 +1,105 @@
+body{
+    background-color:white;
+    color: black;
+}
+body input{
+    width: 300px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 10px;
+    background-color: hwb(0 91% 6%);
+    color: black;
+}
+
+.pending-outer-box{
+    border: 1px solid;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: lab(80.71% 13.12 15.01);
+    padding: 25px  ;
+    display: flex;
+    justify-content: start;
+    text-align: start;
+}
+.pending-outer-box h4{
+    margin: 0;
+    padding: 0;
+}
+.pending-outer-box p{
+    padding: 0;
+    margin: 0;
+}
+.pending-outer-box button{
+    margin: 2px;
+    padding: 10px;
+}
+.view-detials{
+    margin-left: auto;
+}
+
+
+
+
+/* The semi-transparent background */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures it sits above everything else */
+}
+
+/* The actual popup box */
+.modal-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close-btn {
+  margin-top: 1rem;
+  cursor: pointer;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.address-field{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.address-field p{
+    margin: 0;
+    padding: 0;
+    margin-left: 5px;
+}
+
+.modal-content table{
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+}
+.modal-content th{
+    border: 1px solid;
+}
+.modal-content tr{
+    border: 1px solid;
+}
+.modal-content td{
+    border: 1px solid;
+}

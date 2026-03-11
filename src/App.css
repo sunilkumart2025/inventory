@@ -1,0 +1,388 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 2.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+
+
+
+
+
+
+
+
+/*From Hear*/
+
+/*
+
+.edit-popup-open{
+  display:block;
+}
+
+.edit-popup-close{
+  display:none;
+}
+
+
+#invoice-content{
+  background-color: white;
+  width: 210mm;
+  padding: 10mm;
+  font-family: Arial, sans-serif;
+}
+
+.outer-box{
+  display: block;
+  background-color: white;
+  color: black;
+  border: 1px solid;
+}
+.inner-top-section{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px
+}
+
+.inner-top-left{
+  display: grid;
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  width: 55%;
+}
+
+.inner-top-left-first{
+  margin-right: auto;
+  text-align: start;
+  padding-left: 20px;
+  border: 1px solid;
+  width: 100%;
+}
+
+.inner-top-left-first h3{
+  margin: 5px;
+  margin-left: 0;
+}
+
+.inner-top-left-first p{
+  margin:0;
+  margin-left: 10px;
+}
+
+.inner-top-left-first h4{
+  margin:0;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+.inner-top-left-second{
+  margin-right: auto;
+  text-align: start;
+  padding-left: 20px;
+  border: 1px solid;
+  margin-left: 25px;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.inner-top-left-second h3{
+  margin: 5px;
+  margin-top: 15px;
+  margin-left: 0;
+}
+
+.inner-top-left-second p{
+  margin:0;
+  margin-left: 15px;
+}
+
+.inner-top-left-second h4{
+  margin:0;
+  margin-bottom: 4px;
+  margin-left: 35px;
+}
+
+
+
+.inner-top-right{
+  width: 45%;
+}
+
+.inner-top-right-second{
+  align-items: start;
+  text-align: start;
+  margin-top: auto;
+  border: 1px solid;
+  margin-right: 25px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+.inner-top-right-second h3{
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.inner-top-left-second h4{
+  margin: 0;
+}
+
+.inner-top-right-second p{
+  margin: 0;
+  margin-left: 25px;
+}
+
+.my-table{
+  border-collapse: collapse;
+}
+.my-table,
+.my-table th,
+.my-table td{
+  border: 2px solid;
+  padding: 3px;
+  margin: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+*/
+
+/* Container for the PDF capture */
+.very-outer-hide{
+  display:none;
+}
+#invoice-content {
+    background: #fff;
+    padding: 0; /* Remove padding here to allow the border to be edge-to-edge if needed */
+    font-family: 'Times New Roman', Times, serif;
+    color: #000;
+    width: 210mm; 
+    min-height: 297mm; /* Full A4 Height */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+}
+
+.for-boder {
+    border: 2px solid #000;
+    padding: 4mm;
+    margin: 4mm; /* Giving some breathing room from the PDF edge */
+    flex-grow: 1; /* CRITICAL: This makes the border container fill the whole A4 height */
+    display: flex;
+    flex-direction: column;
+}
+.invoice-main-body {
+    flex-grow: 1; 
+}
+
+/* Fixed Header Layout using Flexbox instead of Grid */
+.inner-top-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.inner-top-left {
+  width: 60%;
+}
+
+.inner-top-right {
+  width: 35%;
+  text-align: right;
+}
+
+.inner-top-rsight-second{
+  margin-top: auto;
+}
+
+.inner-top-left-first, 
+.inner-top-left-second, 
+.inner-top-right-second {
+  border: 1px solid hsl(0, 0%, 90%);
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.inner-top-left-first h3, 
+.inner-top-left-second h3, 
+.inner-top-right-second h3 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.inner-top-left-first p, 
+.inner-top-left-second p, 
+.inner-top-right-second p {
+  margin: 2px 0;
+  font-size: 12px;
+  margin-left: 15px;
+}
+.inner-top-left-first h4,
+.inner-top-left-second h4{
+  margin: 0;
+  margin-left: 15px;
+}
+.inner-top-right-second{
+  margin-top: 125px;
+}
+
+/* Table Alignment Fixes */
+.my-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.my-table th, 
+.my-table td {
+  border: 1px solid #000;
+  padding: 6px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.my-table th {
+  background-color: #f2f2f2;
+}
+
+.total-row th, .total-row td {
+  background-color: #eee;
+  font-weight: bold;
+}
+
+.signature{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 25%;
+  margin-top: 50px;
+}
+
+.signature p{
+  margin: 0;
+  padding: 0;
+}
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.invoice-table th {
+    background-color: #f8f9fa;
+    color: #333;
+    text-align: left;
+    padding: 7px 8px;
+    font-size: 12px;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.invoice-table td {
+    padding: 1px 8px;
+    border-bottom: 1px solid #eeeeeed1;
+    font-size: 13px;
+}
+.invoice-summary-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.summary-box {
+    width: 250px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.summary-row.grand-total {
+    border-top: 2px solid #333;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.invoice-main-body {
+    flex-grow: 1; /* This takes up all available space above the footer */
+}
+
+.invoice-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Prevents table from breaking layout */
+}
+
+/* Page Break Logic */
+@media print {
+    #invoice-content {
+        height: 297mm; /* Force exact height for printing */
+    }
+}
+
+.footer-section {
+    width: 100%;
+    margin-top: auto;
+    page-break-inside: avoid; /* Keeps footer from splitting across pages */
+}
+
+.invoice-body-wrapper {
+    flex-grow: 1; /* Occupies all available space above the footer */
+}
+
+
+
+
+
+
+
